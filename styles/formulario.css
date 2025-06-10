@@ -1,0 +1,107 @@
+/* General */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Contenedor principal */
+.form-container {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: white;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+/* Título */
+.form-container h2 {
+  color: #004a99;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Grupos de formularios */
+.form-group {
+  margin-bottom: 18px;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: 600;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #cdd7e1;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #007bff; /* azul */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Botón */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff; /* azul */
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Validación */
+input:invalid,
+textarea:invalid,
+select:invalid {
+  border-color: #a12d24; /* rojo */
+}
+
+input:valid,
+textarea:valid,
+select:valid {
+  border-color: #238528; /* verde */
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .form-container {
+    padding: 20px;
+  }
+
+  button {
+    font-size: 15px;
+  }
+}
