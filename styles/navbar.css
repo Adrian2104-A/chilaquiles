@@ -1,0 +1,82 @@
+.header{
+    z-index: 2;
+    background: #EAECEE;
+    width: 100%;
+    font-family: "Glory", serif; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    font-size: 18px;
+}
+
+.header .data{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Glory", serif; 
+    font-weight: 100;
+    gap: 5px;
+}
+.header .data .ico{
+    margin-left: 7px;
+    margin-right: 7px;
+    color: #00975e;
+}
+.header .tada p{
+    font-weight: lighter;
+    margin-left: 15px;
+}
+
+.header .centro{
+    margin-top: 10px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #1E3A59;
+}
+.header .centro .circulo{
+    margin-top: 5px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #01568f;;
+    animation: bounceInUp;
+    animation-duration: 2s;
+}
+
+.header .centro i{
+    margin-top: 5px;
+    color: #01568f;
+    animation: bounce;
+    animation-duration: 1s;
+    animation-delay: 0.9s;
+}
+
+.header .centro p{
+    margin-top: 5px;
+    color: #00975e;
+    animation: zoomInDown;
+    animation-duration: 3.3s;
+}
+
+.header .busqueda{
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1E3A59;
+}
+
+.header .busqueda button{
+    cursor: url('../img/mano.png'), auto;
+}
+
+.header .busqueda .header-toggle{
+    margin-left: 10px;
+    font-size: 1.5rem;
+    border: none;
+}
