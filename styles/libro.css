@@ -1,0 +1,153 @@
+body{
+
+}
+
+.libros{
+    font-family: 'Glory', sans-serif;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    flex-direction: column;
+}
+
+.maincontainer{
+    width: 70%;
+    height: 100vh;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.thecard{
+  position: relative;
+  width: 20%;
+  height: 35%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+.thecard:hover{
+  transform: rotateY(180deg);
+}
+
+.thefront{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  color: #000;
+}
+
+.theback{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: url(../img/Creamate_P1_Portada_page-0002.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #333;
+  text-align: center;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.clase1{
+    background: url(../img/Creamate_P1_Portada_page-0001.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.clase2{
+    background: url(../img/image.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.clase2b{
+    background: url(../img/portadaas/back2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.clase3{
+    background: url(../img/portadaas/front3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.clase3b{
+    background: url(../img/portadaas/back3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.clase4{
+    background: url(../img/portadaas/front4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.clase4b{
+    background: url(../img/portadaas/back4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.clase5{
+    background: url(../img/portadaas/front5.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.clase5b{
+    background: url(../img/portadaas/back5.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.clase6{
+    background: url(../img/portadaas/front6.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.clase6b{
+    background: url(../img/portadaas/back6.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.theback button{
+    width: 150px;
+    background-color: #738dcc;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+    transition: 0.3s;
+    border-radius: 20px;
+    border: none;
+}
+
+button:hover{
+    background: white;
+    color: #738dcc;
+    transform: scale(1.1);
+} 
