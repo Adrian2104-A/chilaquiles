@@ -8,6 +8,8 @@
     <script defer src="./scripts/navbar.js"></script>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/animaciones.css">
+    <script defer src="./scripts/animaciones.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,100..800;1,100..800&family=Hammersmith+One&display=swap" rel="stylesheet">
@@ -52,7 +54,7 @@
         </p>
     </section>
 
-    <section class="valores">
+    <section class="valores aparecer">
         <h1>Nuestros valores</h1>
         <p><span>Nuestros valores son el corazón de todo lo que hacemos</span> cada uno de ellos guía nuestras 
             decisiones, proyectos y relaciones, reflejando el compromiso profundo que tenemos con 
@@ -176,7 +178,7 @@
     <section class="somos">
         <h1>Nuestra misión y visión reflejan el propósito que nos impulsa...</h1>
         <div class="vym">
-            <div class="mision">
+            <div class="mision hidden">
                 <h3>Misión</h3>
                 <p>
                     Somos una empresa comprometida con la transformación educativa a través del desarrollo 
@@ -186,7 +188,7 @@
                     educativas, fomentando una educación inclusiva, creativa y con impacto social.
                 </p>
             </div>
-            <div class="vision">
+            <div class="vision hidden">
                 <h3>Visión</h3>
                 <p>
                     Ser reconocidos como líderes en el ámbito educativo y editorial en Latinoamérica, 
@@ -201,7 +203,7 @@
     
     <section class="productos">
         <h1>Conoce nuestros productos</h1>
-        <div class="produc">
+        <div class="produc hidden">
             <p>
                 Te presentamos la serie <span>Creamate </span> un complemento ideal de la Nueva 
                 Escuela Mexicana que permite lograr una articulación real y sólida entre
@@ -211,13 +213,46 @@
             </p>
         </div>
         <div class="guias">
-            <div class="soporte">
+            <div class="soporte aparecer">
             </div>
-            <div class="cuadro">
+            <div class="cuadro aparecer">
                 <h4><span>Crea</span>mate</h4>
+                <p>Conoce la serie Creamate al presionar este boton</p>
+                <a href="./productos.html" class="boton-link">
+                    <div class="boton">Visitar</div>
+                </a>
             </div>
-            <div class="soporte"></div>
+            <div class="soporte aparecer"></div>
         </div>
     </section>
+
+    <section class="formulario">
+        <h4>Contactanos</h4>
+        <p>
+            Tienes alguna pregunta sobre nuestros productos, contactanos por este formulario
+        </p>
+        <form class="form-register" action="https://formspree.io/f/xanjoole" method="POST">
+            <input class="controls aparecer" type="text" name="nombres" id="nombres" placeholder="Ingrese su nombre">
+            <input class="controls aparecer" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su apellido">
+            <input class="controls aparecer" type="email" name="correo" id="correo" placeholder="Ingrese su correo">
+            <textarea class="controls aparecer" name="message" placeholder="Asunto" id="asunto"></textarea>
+            <input class="botons aparecer" id="botons" type="submit" value="Enviar">
+        </form>
+    </section>
+
+     <div class="footer">
+        <div class="pie">
+            <ul class="links">
+                <li><a href="#datos">Inicio</a></li>
+                <li><a href="#func">¿Quiénes somos?</a></li>
+                <li><a href="#guia">Valores</a></li>
+                <li><a href="#crear">Mision y Vision</a></li>
+                <li><a href="#paridad">Productos</a></li>
+                <li><a href="#multi">Contactanos</a></li>
+            </ul>
+            <img src="./img/kabil.png" width="70px">
+            <p>@2025 | Todos los derechos reservados pertenecen a MGMC</p>
+        </div>
+    </div>
 </body>
 </html>

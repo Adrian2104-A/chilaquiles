@@ -38,7 +38,7 @@ body{
     transform: scale(1.1);
     filter: drop-shadow(-3px 3px 9px rgba(255, 255, 255, 0.9));
     animation: headShake;
-     animation-duration: 1s;
+    animation-duration: 1s;
 }
 
 .bienvenida{
@@ -317,9 +317,10 @@ body{
 }
 
 .guias{
-    margin-top: 40px;
+    margin-top: 50px;
     display: flex;
     align-items: end;
+    filter: drop-shadow(-3px 3px 9px rgba(0, 0, 0, 0.3));
 }
 
 .guias .cuadro{
@@ -346,7 +347,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
 }
 
 .cuadro h4{
@@ -360,4 +361,123 @@ body{
 
 .cuadro span{
     color: #94e49d;
+}
+
+.cuadro p{
+    width: 70%;
+    text-align: center;
+    color: #dde3ec;
+    font-family: 'Glory', serif;
+}
+
+.boton-link {
+  text-decoration: none;
+}
+
+.boton {
+  width: 150px;
+  background-color: #738dcc;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+
+.boton:hover {
+    background: white;
+    color: #738dcc;
+    transform: scale(1.1);
+}
+
+
+.formulario{
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.formulario h4{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.form-register{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-register #nombres, #apellidos, #correo, #asunto{
+    width: 50%;
+    border: none;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#nombres, #correo{
+    background: #3041c0;
+    color: #ffffff;
+    transition: 0.5s;
+    font-family: 'Glory', serif;
+}
+#nombres::placeholder, #correo::placeholder, #apellidos::placeholder{
+    color: #ffffff;
+}
+#nombres:hover, #correo:hover, #apellidos:hover{
+    background: #107dc1;
+    scale: 1.1;
+}
+
+#apellidos{
+    background: #5262db;
+    color: #ffffff;
+    transition: 0.5s;
+    font-family: 'Glory', serif;
+}
+
+#asunto{
+    height: 150px;
+    border: 5px solid #3041c0;
+}
+
+#botons{
+    border: none;
+    background: #3041c0;
+    width: 30%;
+    padding: 10px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+
+/*Animaciones*/
+
+.hidden{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: scale(0);
+}
+.show{
+    opacity: 1;
+    transition: all 1s;
+    filter: blur(0px);
+    transform: scale(1);
 }
